@@ -6,6 +6,7 @@ namespace AssemblyCSharp
 	{
 		public static int maximumDeckSize = 30;
 		public static int maximumHandSize = 10;
+		public static int capitalCitiesBaseHealthPoints = 100;
 	}
 }
 

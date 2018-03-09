@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CardSystem\CapitalCity.cs" />
      <Compile Include="Assets\Scripts\CardSystem\CardPiles\CardPile.cs" />
      <Compile Include="Assets\Scripts\CardSystem\CardPiles\Deck.cs" />
      <Compile Include="Assets\Scripts\CardSystem\CardPiles\Graveyard.cs" />
      <Compile Include="Assets\Scripts\CardSystem\CardPiles\Hand.cs" />
      <Compile Include="Assets\Scripts\CardSystem\Cards\Card.cs" />
+     <Compile Include="Assets\Scripts\CardSystem\Cards\Leader.cs" />
      <Compile Include="Assets\Scripts\CardSystem\Cards\Politics.cs" />
      <Compile Include="Assets\Scripts\CardSystem\Cards\Power.cs" />
      <Compile Include="Assets\Scripts\CardSystem\Cards\Unit.cs" />

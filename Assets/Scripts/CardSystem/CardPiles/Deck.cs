@@ -10,14 +10,17 @@ namespace AssemblyCSharp
 		private string deckName;
 		private Faction deckFaction;
 
+		private Leader leaderCard;
+
 		private CardsCollection cardsCollection;
 
-		public Deck (string deckName, Faction deckFaction, CardsCollection cardsCollection, List<Card> deckContent)
+		public Deck (string deckName, Faction deckFaction, CardsCollection cardsCollection, List<Card> deckContent, Leader leaderCard)
 		{
 			this.deckName = deckName;
 			this.deckFaction = deckFaction;
 			this.cardsCollection = cardsCollection;
 			this.cardPileContent = deckContent;
+			this.leaderCard = leaderCard;
 		}
 
 		public void addCard(Card newCard){
