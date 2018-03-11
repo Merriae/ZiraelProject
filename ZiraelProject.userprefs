@@ -2,15 +2,23 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CardSystem\CapitalCity.cs">
     <Files>
-      <File FileName="Assets\Scripts\CardSystem\CardsCollection.cs" Line="30" Column="3" />
-      <File FileName="Assets\Scripts\CardSystem\CardsSystemConstantValues.cs" Line="9" Column="57" />
-      <File FileName="Assets\Scripts\CardSystem\Cards\Card.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CardSystem\CapitalCity.cs" Line="18" Column="40" />
-      <File FileName="Assets\Scripts\CardSystem\CardPiles\Deck.cs" Line="13" Column="29" />
+      <File FileName="Assets\Scripts\CardSystem\CardsCollection.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\CardsSystemConstantValues.cs" Line="9" Column="48" />
+      <File FileName="Assets\Scripts\CardSystem\Cards\Card.cs" Line="11" Column="31" />
+      <File FileName="Assets\Scripts\CardSystem\CapitalCity.cs" Line="26" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\CardPiles\Deck.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CardSystem\Cards\Politics.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CardSystem\Cards\Leader.cs" Line="18" Column="2" />
+      <File FileName="Assets\Scripts\CardSystem\Cards\Leader.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CardSystem\Cards\Power.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CardSystem\Cards\Unit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\Factions\Faction.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\Factions\Empire.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\Factions\Monsters.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\Factions\Neutral.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\Factions\Pirates.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\CardPiles\CardPile.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\CardPiles\Graveyard.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardSystem\CardPiles\Hand.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
