@@ -4,15 +4,18 @@ namespace AssemblyCSharp
 {
 	public class Leader : Card
 	{
+		private Effect passiveEffect=null;
 
-		private int healthPoints;
-
-		public Leader (string cardName, string cardDescription, Faction cardFaction, int healthPoints)
+		public Leader (string cardName, string cardDescription, Faction cardFaction, int healthPoints, Effect passiveEffect)
 		{
 			this.cardName = cardName;
 			this.cardDescription = cardDescription;
 			this.cardFaction = cardFaction;
-			this.healthPoints = healthPoints;
+			this.passiveEffect = passiveEffect;
+
+			typeOrder = 0;
+
+			power = -1;
 		}
 	}
 }

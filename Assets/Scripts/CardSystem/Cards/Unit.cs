@@ -4,15 +4,24 @@ namespace AssemblyCSharp
 {
 	public class Unit : Card
 	{
+		private Effect onPlayEffect=null;
+		private Effect onDeathEffect=null;
+		private Effect onTurnEndEffect = null;
+		private Effect onDrawEffect=null;
 
-		private int healthPoints;
-
-		public Unit (string cardName, string cardDescription, Faction cardFaction, int healthPoints)
+		public Unit (string cardName, string cardDescription, Faction cardFaction, int power, Effect onPlayEffect, Effect onDeathEffect, Effect onTurnEndEffect, Effect onDrawEffect)
 		{
 			this.cardName = cardName;
 			this.cardDescription = cardDescription;
 			this.cardFaction = cardFaction;
-			this.healthPoints = healthPoints;
+			this.power = power;
+
+			this.onPlayEffect = onPlayEffect;
+			this.onDeathEffect = onDeathEffect; 
+			this.onTurnEndEffect = onTurnEndEffect;
+			this.onDrawEffect = onDrawEffect;
+
+			typeOrder = 1;
 		}
 	}
 }

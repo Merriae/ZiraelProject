@@ -22,6 +22,9 @@ namespace AssemblyCSharp
 			}
 		}
 
+		protected void Sort(){
+			cardPileContent.Sort ();
+		}
 	}
 }
 

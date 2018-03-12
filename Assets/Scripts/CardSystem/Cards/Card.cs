@@ -2,11 +2,15 @@
 
 namespace AssemblyCSharp
 {
-	public abstract class Card
+	public abstract class Card : IComparable<Card>
 	{
 		protected string cardName;
 		protected string cardDescription;
 		protected Faction cardFaction;
+
+		protected int power;
+
+		protected int typeOrder;
 
 		public string GetCardName(){
 			return cardName;
@@ -67,6 +71,24 @@ namespace AssemblyCSharp
 		public override int GetHashCode ()
 		{
 			return cardName.GetHashCode () * 17 + cardDescription.GetHashCode () * 5 + cardFaction.GetHashCode ();
+		}
+
+		public int CompareTo(Card other){
+			int toReturn;
+
+			if (typeOrder > other.typeOrder) {
+				toReturn = 1;
+			} else if (typeOrder < other.typeOrder) {
+				toReturn = -1;
+			} else if (power > other.power) {
+				toReturn = 1;
+			} else if (power < other.power) {
+				toReturn = -1;
+			} else {
+				toReturn = cardName.CompareTo (other.cardName);
+			}
+
+			return toReturn;
 		}
 	}
 }
