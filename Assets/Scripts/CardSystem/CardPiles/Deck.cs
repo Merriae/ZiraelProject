@@ -5,8 +5,6 @@ namespace AssemblyCSharp
 {
 	public class Deck : CardPile
 	{
-		private static int maximumSize = CardSystemConstantValues.maximumDeckSize;
-
 		private string deckName;
 		private Faction deckFaction;
 
@@ -16,6 +14,8 @@ namespace AssemblyCSharp
 
 		public Deck (string deckName, Faction deckFaction, CardsCollection cardsCollection, List<Card> deckContent, Leader leaderCard)
 		{
+			maximumSize = CardSystemConstantValues.maximumDeckSize;
+
 			this.deckName = deckName;
 			this.deckFaction = deckFaction;
 			this.cardsCollection = cardsCollection;
@@ -23,17 +23,16 @@ namespace AssemblyCSharp
 			this.leaderCard = leaderCard;
 		}
 
-		public void addCard(Card newCard){
-			if(cardPileContent.Count < maximumSize && cardsCollection.contains(newCard) && ( newCard.GetCardFaction().Equals(deckFaction) || newCard.GetCardFaction().GetType() == typeof(Neutral))){
-				cardPileContent.Add (newCard);
-			}
+		public int GetMaximumSize(){
+			return maximumSize;
 		}
 
-		public void removeCard(Card toRemoveCard){
-			if(cardPileContent.Count > 0 && cardPileContent.Contains(toRemoveCard)){
-				cardPileContent.Remove (toRemoveCard);
+		public Card Draw(){
+			if (cardPileContent.Count > 0) {
+				Card toDraw = cardPileContent [0];
+				cardPileContent.RemoveAt (0);
 			}
+			throw new Exception ("Deck.Draw() exception");
 		}
 	}
 }
-

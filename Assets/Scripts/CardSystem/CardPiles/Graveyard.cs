@@ -7,15 +7,9 @@ namespace AssemblyCSharp
 	{
 		public Graveyard (List<Card> graveyardContent)
 		{
+			maximumSize = CardSystemConstantValues.maximumGraveyardSize;
+
 			this.cardPileContent = graveyardContent;
-		}
-
-		public void addCard(Card newCard){
-			cardPileContent.Add (newCard);
-		}
-
-		public void removeCard(Card toRemoveCard){
-			cardPileContent.Remove (toRemoveCard);
 		}
 	}
 }

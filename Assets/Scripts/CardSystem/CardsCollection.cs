@@ -12,19 +12,19 @@ namespace AssemblyCSharp
 			this.cardsCollectionContent = cardsCollectionContent;
 		}
 
-		public void addCard(Card newCard){
+		public void AddCard(Card newCard){
 			if (!cardsCollectionContent.Contains (newCard)) {
 				cardsCollectionContent.Add (newCard);
 			}
 		}
 
-		public void removeCard(Card toRemoveCard){
+		public void RemoveCard(Card toRemoveCard){
 			if(cardsCollectionContent.Contains(toRemoveCard)){
 				cardsCollectionContent.Remove(toRemoveCard);
 			}
 		}
 
-		public bool contains(Card toCheckCard){
+		public bool Contains(Card toCheckCard){
 			return cardsCollectionContent.Contains(toCheckCard);
 		}
 	}

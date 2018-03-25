@@ -8,7 +8,7 @@ namespace AssemblyCSharp
 		{
 		}
 
-		public void applyEffect(){
+		public void ApplyEffect(){
 		}
 	}
 }

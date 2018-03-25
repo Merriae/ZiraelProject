@@ -9,6 +9,8 @@ namespace AssemblyCSharp
 
 		private Random rng = new Random ();
 
+		protected int maximumSize;
+
 		protected void Shuffle(){
 			int currentRandomIndex, n = cardPileContent.Count;
 			Card tmp;
@@ -22,8 +24,28 @@ namespace AssemblyCSharp
 			}
 		}
 
+		public int GetSize(){
+			return cardPileContent.Count;
+		}
+
 		protected void Sort(){
 			cardPileContent.Sort ();
+		}
+
+		public bool Contains(Card toCheckCard){
+			return cardPileContent.Contains(toCheckCard);
+		}
+
+		public void AddCard(Card newCard){
+			if(cardPileContent.Count < maximumSize){
+				cardPileContent.Add (newCard);
+			}
+		}
+
+		public void RemoveCard(Card toRemoveCard){
+			if(cardPileContent.Count > 0 && cardPileContent.Contains(toRemoveCard)){
+				cardPileContent.Remove (toRemoveCard);
+			}
 		}
 	}
 }
